@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardList from '../components/Cardlist';
 import SearchBox from '../components/SearchBox';
+import { robots } from '../components/robots';
 import Scroll from '../components/Scroll';
 import './App.css';
 
@@ -8,16 +9,16 @@ class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			robots: [],
+			robots: robots,
 			searchfield: ''
 		}
 	}
 
-	componentDidMount() {
-		fetch('https://jsonplaceholder.typicode.com/users')
-			.then(response => response.json())
-			.then(users => this.setState({ robots: users}));
-	}
+	// componentDidMount() {
+	// 	fetch('../components/robots')
+	// 		.then(response => response.json())
+	// 		.then(users => this.setState({ robots: users}));
+	// }
 	
 
 	onSearchChange = (event) => {
