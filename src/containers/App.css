@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Mismo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mismo Regular'), url('Mismo Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Mismo Campus';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mismo Campus'), url('Mismo Campus.woff') format('woff');
+}
+
+h1 {
+	font-family: 'Mismo Campus';
+}
